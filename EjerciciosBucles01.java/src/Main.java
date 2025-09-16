@@ -119,12 +119,11 @@ public class Main {
 
     /*8. Suma hasta cero (do-while): Ingresa números y súmalos hasta que se ingrese un cero.*/
     int numero;
+    int suma=0;
     do {
-      if(numero!=0){
-
-      }
       numero = teclado.nextInt();
       teclado.nextLine();
+
     }while(numero!=0)
 
 
