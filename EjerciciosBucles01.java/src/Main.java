@@ -121,10 +121,13 @@ public class Main {
     int numero;
     int suma=0;
     do {
+      System.out.println("Introduzca un número: ");
       numero = teclado.nextInt();
       teclado.nextLine();
+      suma += numero;
 
-    }while(numero!=0)
+    }while(numero!=0);
+    System.out.println("La suma total de los números es: " + suma);
 
 
     /*9. Validar contraseña (while): Pide una contraseña hasta que el usuario escriba la correcta.
