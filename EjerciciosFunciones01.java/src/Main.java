@@ -159,7 +159,7 @@ public class Main {
       }else if(i<pasos){
         System.out.println("Y otro más...(" + i + " Paso).");
       }else{
-        System.out.println("Y nos paramos. Has avanzado (" + i + " Pasos).");
+        System.out.println("Y nos paramos. Has avanzado (" + i + " Pasos en total).");
       }
     }
   }
