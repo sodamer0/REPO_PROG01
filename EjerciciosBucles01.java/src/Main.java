@@ -118,7 +118,7 @@ public class Main {
 
 
     /*8. Suma hasta cero (do-while): Ingresa números y súmalos hasta que se ingrese un cero.*/
-    int numero;
+    /*int numero;
     int suma=0;
     do {
       System.out.println("Introduzca un número: ");
@@ -127,10 +127,30 @@ public class Main {
       suma += numero;
 
     }while(numero!=0);
-    System.out.println("La suma total de los números es: " + suma);
+    System.out.println("La suma total de los números es: " + suma);*/
 
 
-    /*9. Validar contraseña (while): Pide una contraseña hasta que el usuario escriba la correcta.
-  10. Números impares (for): Ingresa un número N y muestra los impares desde 1 hasta N.*/
+    /*9. Validar contraseña (while): Pide una contraseña hasta que el usuario escriba la correcta.*/
+    /*String contrasenha = "adelante";
+    String password;
+    do{
+      System.out.println("Introduzca la contraseña: ");
+      password = teclado.nextLine();
+    }while(!contrasenha.equalsIgnoreCase(password));
+    System.out.println("Acceso permitido.");*/
+
+
+    /*10. Números impares (for): Ingresa un número n y muestra los impares desde 1 hasta n.*/
+    System.out.println("Introduce un número entero n para calcular los impares entre el 1 y n: ");
+    int n8 = teclado.nextInt();
+    teclado.nextLine();
+    System.out.print("Números impares desde 1 hasta " + n8 + ": [ ");
+    for(int i=1; i<=n8; i++){
+      if (i % 2 != 0){
+        System.out.print(i + " ");
+      }
+    }
+    System.out.print("]");
+    System.out.println();
   }
 }
