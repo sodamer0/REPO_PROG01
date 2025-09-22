@@ -13,12 +13,21 @@ public class Main {
     1.Solicita al usuario tres datos:
       -La cantidad inicial de dinero a invertir (ej: 1000€).
       -La tasa de interés anual en porcentaje (ej: 5%).
-      -El número de años que mantendrá la inversión (ej: 10 años).*/
+      -El número de años que mantendrá la inversión (ej: 10 años).
+    2.Usa un bucle for que se ejecute una vez por cada año de la inversión.
+    3.En cada iteración, calcula el interés ganado ese año y súmalo al total. La fórmula para el interés de un año es:
+     saldo_actual * (tasa_de_interes / 100).
+    Muestra por pantalla un resumen anual, indicando el año y el saldo total al final de ese año.
+    Ejemplo de salida:
+    Año 1: Saldo de 1050.00€
+    Año 2: Saldo de 1102.50€
+    ...
+    Año 10: Saldo de 1628.89€*/
 
-    System.out.println("Introduzca el capital inicial: ");
+    /*System.out.println("Introduzca el capital inicial: ");
     double capitalInicial = teclado.nextDouble();
     teclado.nextLine();
-    System.out.println("Introduzca el interés anual: ");
+    System.out.println("Introduzca el interés anual en %: ");
     double tipoAnual = teclado.nextDouble();
     teclado.nextLine();
     System.out.println("Numero de años que se mantendrá la inversión: ");
@@ -27,60 +36,53 @@ public class Main {
     double capital = capitalInicial;
     System.out.printf("Capital inicial: %.2f\n", capital);
     for(int i=1; i<=anhos; i++){
-      capital = capital * (1 + tipoAnual);
+      capital = capital * (1 + tipoAnual/100);
       System.out.printf("Capital al final del año %d: %.2f€%n", i, capital);
     }
     double interesTotal = capital - capitalInicial;
-    System.out.printf("A partir de un capital inicial de %.2f€,a %d años, se genera un interés total de %.2f€ \n", capital, anhos, interesTotal);
+    System.out.printf("A partir de un capital inicial de %.2f€ (a %d años), se genera un interés total de %.2f€.\n", capitalInicial, anhos, interesTotal);*/
 
 
-
-
-
-
-    /*2.Usa un bucle for que se ejecute una vez por cada año de la inversión.
-    3.En cada iteración, calcula el interés ganado ese año y súmalo al total. La fórmula para el interés de un año es: saldo_actual * (tasa_de_interes / 100).*/
-    /*.
-    Muestra por pantalla un resumen anual, indicando el año y el saldo total al final de ese año.
-    Ejemplo de salida:
-    Año 1: Saldo de 1050.00€
-    Año 2: Saldo de 1102.50€
-    ...
-    Año 10: Saldo de 1628.89€
-    Ejercicio 2: El Cajero Automático Interminable (while)
-    Escenario: Estás programando el software de un cajero automático. El cajero debe permitir al usuario retirar dinero mientras tenga saldo suficiente. El programa no sabe cuántas veces el usuario querrá retirar dinero, por lo que debe continuar hasta que el usuario decida salir o se quede sin fondos.
+    /*Ejercicio 2: El Cajero Automático Interminable (while)
+    Escenario: Estás programando el software de un cajero automático. El cajero debe permitir al usuario retirar dinero
+     mientras tenga saldo suficiente. El programa no sabe cuántas veces el usuario querrá retirar dinero, por lo que
+     debe continuar hasta que el usuario decida salir o se quede sin fondos.
     Tu tarea:
-    1.
-    Pregunta al usuario su saldo inicial (ej: 2000€).
-    2.
-    Crea un bucle while que se ejecute mientras el saldo sea mayor que cero y el usuario no haya decidido salir.
-    3.
-    Dentro del bucle, pregunta al usuario cuánto dinero desea retirar.
-    4.
-    Comprueba si tiene saldo suficiente.
-    o
+      1.Pregunta al usuario su saldo inicial (ej: 2000€).
+      2.Crea un bucle while que se ejecute mientras el saldo sea mayor que cero y el usuario no haya decidido salir.
+      3.Dentro del bucle, pregunta al usuario cuánto dinero desea retirar.
+      4.Comprueba si tiene saldo suficiente.
     Si puede retirarlo, resta la cantidad al saldo y muestra el nuevo saldo.
-    o
     Si no puede, muéstrale un mensaje de "Saldo insuficiente".
-    5.
-Pregúntale si desea realizar otra operación (puedes usar un '1' para sí y un '0' para no). El bucle debe terminar si el usuario introduce un '0'.
-Ejercicio 3: Validación de PIN de Seguridad (do-while)
-Escenario: Antes de acceder a su cuenta online, un cliente debe introducir su PIN de 4 dígitos. El sistema debe pedir el PIN al menos una vez y seguir pidiéndolo hasta que el usuario introduzca el PIN correcto.
-Tu tarea:
-1.
-Define un PIN correcto en una variable dentro de tu programa (ej: 1234).
-2.
-Utiliza un bucle do-while. Este tipo de bucle es perfecto porque garantiza que el cuerpo del bucle (la pregunta del PIN) se ejecute al menos una vez.
-3.
-Dentro del bucle, pide al usuario que introduzca su PIN.
-4.
-El bucle debe repetirse mientras el PIN introducido sea diferente al PIN correcto.
-5.
-Cuando el usuario introduzca el PIN correcto, el bucle terminará y deberás mostrar un mensaje de "Acceso concedido".
-Módulo 2: Gestión de una Tienda Online
-Ejercicio 4: Carrito de la Compra (for)
-Escenario: Eres el desarrollador de una plataforma de e-commerce. Necesitas implementar la funcionalidad del carrito de la compra que calcule el precio total de una serie de productos. El usuario primero indicará cuántos productos va a comprar.
-Tu tarea:
+      5.Pregúntale si desea realizar otra operación (puedes usar un '1' para sí y un '0' para no). El bucle debe
+       terminar si el usuario introduce un '0'.*/
+
+    System.out.println("Introduzca el saldo incial: ");
+    double saldoIni = teclado.nextDouble();
+    teclado.nextLine();
+    while(saldoIni>0){
+
+    }
+
+
+
+  /*Ejercicio 3: Validación de PIN de Seguridad (do-while)
+  Escenario: Antes de acceder a su cuenta online, un cliente debe introducir su PIN de 4 dígitos. El sistema debe pedir el PIN al menos una vez y seguir pidiéndolo hasta que el usuario introduzca el PIN correcto.
+  Tu tarea:
+  1.
+  Define un PIN correcto en una variable dentro de tu programa (ej: 1234).
+  2.
+  Utiliza un bucle do-while. Este tipo de bucle es perfecto porque garantiza que el cuerpo del bucle (la pregunta del PIN) se ejecute al menos una vez.
+  3.
+  Dentro del bucle, pide al usuario que introduzca su PIN.
+  4.
+  El bucle debe repetirse mientras el PIN introducido sea diferente al PIN correcto.
+  5.
+  Cuando el usuario introduzca el PIN correcto, el bucle terminará y deberás mostrar un mensaje de "Acceso concedido".
+  Módulo 2: Gestión de una Tienda Online
+  Ejercicio 4: Carrito de la Compra (for)
+  Escenario: Eres el desarrollador de una plataforma de e-commerce. Necesitas implementar la funcionalidad del carrito de la compra que calcule el precio total de una serie de productos. El usuario primero indicará cuántos productos va a comprar.
+  Tu tarea:
 1.
 Primero, pregunta al usuario cuántos productos va a introducir en el carrito.
 2.
