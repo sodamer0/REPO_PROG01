@@ -69,10 +69,20 @@ public class Main {
 
     /*10. Crea una función que reciba un número n y, usando un bucle, simule que el robot da n pasos,
     mostrando cada paso.*/
-    System.out.println("Introduzca cuántos pasos va a ejecutar el robot: ");
+    /*System.out.println("Introduzca cuántos pasos va a ejecutar el robot: ");
     int movimientos = teclado.nextInt();
     teclado.nextLine();
-    pasitos(movimientos);
+    pasitos(movimientos);*/
+
+
+
+
+
+        System.out.print("Introduce un número decimal: ");
+        double numero = teclado.nextDouble();
+        System.out.println("Número leído: " + numero);
+        teclado.close();
+
 
 
   }

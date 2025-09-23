@@ -56,11 +56,41 @@ public class Main {
     Si no puede, muéstrale un mensaje de "Saldo insuficiente".
       5.Pregúntale si desea realizar otra operación (puedes usar un '1' para sí y un '0' para no). El bucle debe
        terminar si el usuario introduce un '0'.*/
-
-    System.out.println("Introduzca el saldo incial: ");
-    double saldoIni = teclado.nextDouble();
+    System.out.println("Bienvenid@ a su cajero virtual: ");
+    System.out.println("Introduzca el saldo inicial: ");
+    double saldo = teclado.nextDouble();
     teclado.nextLine();
-    while(saldoIni>0){
+    int opcion=0;
+
+    while(saldo>0 && opcion!=2){
+      System.out.println("Elija una opción:\n 1. Retirar dinero de su cuenta.\n 2. Salir.\n");
+      opcion = teclado.nextInt();
+      switch(opcion){
+
+        case 1:
+            System.out.println("Introduzca la cantidad que desea retirar. ");
+            double retirada = teclado.nextDouble();
+            if (retirada > 0 && saldo>= retirada) {
+              saldo = saldo - retirada;
+              System.out.printf("\u001B[34m" + "Ha retirado usted %.2f€, su saldo ahora es de %.2f€\u001B[0m\n", retirada, saldo);
+              System.out.println();
+            } else if (retirada > saldo) {
+              System.out.println("\u001B[31m" + "Su saldo es insuficiente. Cancelada operación.\u001B[0m\n");
+            } else {
+              System.out.println("\u001B[31m" + "Por favor, introduzca una catidad válida.\u001B[0m\n");
+            }
+            if (saldo<=0){
+              System.out.println("\u001B[31m" + "Atención su saldo a llegado a cero o es negativo. Por favor, ingrese saldo en su cuenta." + "\u001B[0m" + "\n");
+            }
+            break;
+        case 2:
+          System.out.println("\u001B[34m" + "Gracias por su visita. Hasta Pronto!\u001B[34m");
+          break;
+
+        default:{
+          System.out.println("\u001B[31m" + "Error. Indique una opción válida.\u001B[0m\n");
+        }
+      }
 
     }
 
