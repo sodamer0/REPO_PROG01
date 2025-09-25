@@ -56,7 +56,7 @@ public class Main {
     Si no puede, muéstrale un mensaje de "Saldo insuficiente".
       5.Pregúntale si desea realizar otra operación (puedes usar un '1' para sí y un '0' para no). El bucle debe
        terminar si el usuario introduce un '0'.*/
-    System.out.println("Bienvenid@ a su cajero virtual: ");
+    /*System.out.println("Bienvenid@ a su cajero virtual: ");
     System.out.println("Introduzca el saldo inicial: ");
     double saldo = teclado.nextDouble();
     teclado.nextLine();
@@ -92,7 +92,7 @@ public class Main {
         }
       }
 
-    }
+    }*/
 
 
 
@@ -141,58 +141,92 @@ Si es otro número (que no sea 0), muestra un mensaje de error.
 4.
 Cuando el bucle termine (el usuario introduzca 0), calcula la puntuación media (total de puntos / número de valoraciones).
 5.
-Muestra la puntuación media final. ¡Cuidado con la división por cero si no se introduce ninguna valoración!
-Ejercicio 6: Menú de Opciones de Usuario (do-while)
-Escenario: Estás creando el panel de control de un usuario en una página web. Al entrar, el usuario ve un menú de opciones y debe elegir una. El menú debe mostrarse al menos una vez y seguir apareciendo hasta que elija la opción de "Salir".
-Tu tarea:
-1.
-Usa un bucle do-while para mostrar el menú y pedir una opción.
-2.
-Dentro del bucle, muestra las siguientes opciones al usuario:
-3.
-Menú de Usuario:
-4.
-1. Ver mi perfil
-5.
-2. Modificar dirección de envío
-6.
-3. Ver historial de pedidos
-7.
-4. Salir
+Muestra la puntuación media final. ¡Cuidado con la división por cero si no se introduce ninguna valoración!*/
+
+
+  /*Ejercicio 6: Menú de Opciones de Usuario (do-while)
+  Escenario: Estás creando el panel de control de un usuario en una página web. Al entrar, el usuario ve un menú de opciones y debe elegir una. El menú debe mostrarse al menos una vez y seguir apareciendo hasta que elija la opción de "Salir".
+  Tu tarea:
+  1. Usa un bucle do-while para mostrar el menú y pedir una opción.
+  2. Dentro del bucle, muestra las siguientes opciones al usuario:
+  3. Menú de Usuario:
+  4.
+  1. Ver mi perfil
+  5.
+  2. Modificar dirección de envío
+  6.
+  3. Ver historial de pedidos
+  7.
+  4. Salir
 8.
 Pide al usuario que elija una opción (introduciendo un número del 1 al 4).
 9.
 Usa una estructura de control (como if-else o switch) para mostrar un mensaje diferente según la opción elegida (ej: "Cargando tu perfil...").
 10.
 El bucle debe continuar repitiéndose mientras la opción elegida por el usuario no sea la 4 (Salir).
-Módulo 3: Control de un Robot Sencillo
-Ejercicio 7: Secuencia de Movimientos del Brazo Robótico (for)
-Escenario: Estás programando un brazo robótico industrial que debe realizar una secuencia de movimientos precisos para ensamblar una pieza. El operario primero indica cuántos pasos tiene la secuencia.
+Módulo 3: Control de un Robot Sencillo*/
+
+/*Ejercicio 7: Secuencia de Movimientos del Brazo Robótico (for)
+Escenario: Estás programando un brazo robótico industrial que debe realizar una secuencia de movimientos
+ precisos para ensamblar una pieza. El operario primero indica cuántos pasos tiene la secuencia.
 Tu tarea:
-1.
-Pregunta al operario cuántos movimientos va a programar en la secuencia.
-2.
-Usa un bucle for para que se repita ese número de veces.
-3.
-En cada iteración, pide las coordenadas (X, Y) a las que el robot debe moverse (puedes pedir los dos números por separado).
-4.
-Dentro del bucle, muestra un mensaje simulando la acción. Por ejemplo: Movimiento 1: Brazo robótico moviéndose a la posición (X, Y).
-5.
-Al final, muestra un mensaje de "Secuencia de movimientos completada".
-Ejercicio 8: Robot Explorador en Bucle (while)
-Escenario: Un pequeño robot explorador está en un planeta desconocido. El robot avanza y, tras cada avance, analiza el terreno que tiene delante. Debe continuar explorando hasta que su sensor detecte una "base segura".
-Tu tarea:
-1.
-Informa al usuario que puede introducir lecturas del sensor del robot (ej: "rocas", "cráter", "terreno llano", "base segura").
-2.
-Crea un bucle while que se ejecute mientras la lectura del sensor no sea "base segura".
-3.
-Dentro del bucle, pide al usuario la nueva lectura del sensor.
-4.
-Imprime un mensaje que indique lo que el robot está haciendo. Por ejemplo: Sensor detecta 'rocas'. El robot continúa explorando....
-5.
-Cuando el usuario finalmente introduce "base segura", el bucle termina y el programa debe imprimir: "¡Base segura encontrada! Misión cumplida."
-Ejercicio 9: Diagnóstico del Sistema del Robot (do-while)
+1. Pregunta al operario cuántos movimientos va a programar en la secuencia.
+2. Usa un bucle for para que se repita ese número de veces.
+3. En cada iteración, pide las coordenadas (X, Y) a las que el robot debe moverse
+ (puedes pedir los dos números por separado).
+4. Dentro del bucle, muestra un mensaje simulando la acción. Por ejemplo:
+ Movimiento 1: Brazo robótico moviéndose a la posición (X, Y).
+5. Al final, muestra un mensaje de "Secuencia de movimientos completada".*/
+
+   /* int numPasos=0;
+    double x = 0;
+    double y = 0;
+    System.out.println("Introduzca el número de pasos necesarios ->");
+    numPasos = teclado.nextInt();
+    teclado.nextLine();
+    for (int i=1; i<=numPasos; i++){
+      System.out.println("Coordenadas de la posición " + i + " -> ");
+      System.out.println("Introduzca la coordenada x ->");
+      x = teclado.nextDouble();
+      System.out.println("Introduzca la coordenada y ->");
+      y = teclado.nextDouble();
+      System.out.println("Movimiento-" + i + ": Brazo desplazándose a la posición (" + x + ", " + y + ") ==>");
+    }
+    System.out.println("******Secuencia de movimientos completada******");*/
+
+    /*Ejercicio 8: Robot Explorador en Bucle (while)
+    Escenario: Un pequeño robot explorador está en un planeta desconocido. El robot avanza y, tras cada avance,
+     analiza el terreno que tiene delante. Debe continuar explorando hasta que su sensor detecte una "base segura".
+    Tu tarea:
+      1.Informa al usuario de que puede introducir lecturas del sensor del robot (ej: "rocas", "cráter", "terreno llano",
+      "base segura").
+      2.Crea un bucle while que se ejecute mientras la lectura del sensor no sea "base segura".
+      3.Dentro del bucle, pide al usuario la nueva lectura del sensor.
+      4.Imprime un mensaje que indique lo que el robot está haciendo. Por ejemplo: Sensor detecta 'rocas'.
+       El robot continúa explorando....
+      5.Cuando el usuario finalmente introduce "base segura", el bucle termina y el programa debe imprimir:
+       "¡Base segura encontrada! Misión cumplida."*/
+
+    /*
+    System.out.println("Introduciendo las lecturas del sensor del robot ->");
+    String lectura = "";
+    int i=1;
+    while(!lectura.equalsIgnoreCase("base segura")){
+      lectura = teclado.nextLine();
+      if(lectura.equalsIgnoreCase(("base segura"))){
+        break;
+      }
+      System.out.println("Lectura " + i + "->");
+      System.out.println("Robot detecta \"" + lectura + "\"");
+      System.out.println("El robot continúa la exploración.");
+      i++;
+    }
+    System.out.println("¡Base segura encontrada!. Misión cumplida.");
+    */
+
+
+
+/*Ejercicio 9: Diagnóstico del Sistema del Robot (do-while)
 Escenario: Un robot de mantenimiento debe realizar un chequeo de sus sistemas internos al arrancar. El chequeo se ejecuta al menos una vez, y después pregunta al técnico si desea volver a ejecutarlo.
 Tu tarea:
 1.
