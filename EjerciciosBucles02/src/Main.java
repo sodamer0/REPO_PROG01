@@ -222,30 +222,23 @@ Tu tarea:
 
 
 
-/*Ejercicio 9: Diagnóstico del Sistema del Robot (do-while)
-Escenario: Un robot de mantenimiento debe realizar un chequeo de sus sistemas internos al arrancar. El chequeo se ejecuta al menos una vez, y después pregunta al técnico si desea volver a ejecutarlo.
-Tu tarea:
-1.
-Usa un bucle do-while para simular el diagnóstico.
-2.
-Dentro del bucle, muestra una serie de mensajes que simulen el chequeo:
-3.
-Iniciando diagnóstico...
-4.
-- Verificando sensores... OK
-5.
-- Calibrando motores... OK
-6.
-- Estado de la batería: 98%
-7.
-Diagnóstico completado.
-8.
-Después de mostrar los mensajes, pregunta al técnico: "¿Desea ejecutar el diagnóstico de nuevo? (s/n)".
-9.
-El bucle debe repetirse mientras el usuario introduzca 's' (o 'S'). Si introduce cualquier otra cosa, el bucle terminará.
-10.
-Al salir del bucle, muestra un mensaje como "Sistema listo. Robot preparado para operar*/
-
+  /*
+    EJERCICIO 9: Diagnóstico del Sistema del Robot (do-while)
+    Escenario: Un robot de mantenimiento debe realizar un chequeo de sus sistemas internos al arrancar. El chequeo se
+    ejecuta al menos una vez, y después pregunta al técnico si desea volver a ejecutarlo.
+    Tu tarea:
+    1.Usa un bucle do-while para simular el diagnóstico.
+    2.Dentro del bucle, muestra una serie de mensajes que simulen el chequeo:
+     - Iniciando diagnóstico...
+     - Verificando sensores... OK
+     - Calibrando motores... OK
+     - Estado de la batería: 98%
+     - Diagnóstico completado.
+    3.Después de mostrar los mensajes, pregunta al técnico: "¿Desea ejecutar el diagnóstico de nuevo? (s/n)".
+    4.El bucle debe repetirse mientras el usuario introduzca 's' (o 'S'). Si introduce cualquier otra cosa, el bucle terminará.
+    5.Al salir del bucle, muestra un mensaje como "Sistema listo. Robot preparado para operar.
+    */
+    
 
 
 
