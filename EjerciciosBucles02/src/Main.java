@@ -4,9 +4,13 @@ public class Main {
   public static void main(String[] args) {
     Scanner teclado = new Scanner(System.in);
 
-    /*Ejercicios de Programación: Bucles
-    Módulo 1: Simulación Bancaria:
-    Ejercicio 1: Calculadora de Interés Compuesto (for)
+    //Ejercicios de Programación: Bucles
+
+    //Módulo 1: Simulación Bancaria:
+
+
+    /*
+    EJERCICIO 1: Calculadora de Interés Compuesto (for)
     Escenario: Trabajas para un banco y necesitas crear una herramienta que permita a los clientes proyectar sus ahorros.
     La herramienta debe calcular cómo crecerá una inversión inicial a lo largo de los años gracias al interés compuesto.
     Tu tarea:
@@ -22,9 +26,11 @@ public class Main {
     Año 1: Saldo de 1050.00€
     Año 2: Saldo de 1102.50€
     ...
-    Año 10: Saldo de 1628.89€*/
+    Año 10: Saldo de 1628.89€
+    */
 
-    /*System.out.println("Introduzca el capital inicial: ");
+    /*  CÓDIGO:
+    System.out.println("Introduzca el capital inicial: ");
     double capitalInicial = teclado.nextDouble();
     teclado.nextLine();
     System.out.println("Introduzca el interés anual en %: ");
@@ -40,10 +46,16 @@ public class Main {
       System.out.printf("Capital al final del año %d: %.2f€%n", i, capital);
     }
     double interesTotal = capital - capitalInicial;
-    System.out.printf("A partir de un capital inicial de %.2f€ (a %d años), se genera un interés total de %.2f€.\n", capitalInicial, anhos, interesTotal);*/
+    System.out.printf("A partir de un capital inicial de %.2f€ (a %d años), se genera un interés total de %.2f€.\n",
+     capitalInicial, anhos, interesTotal);
+     */
 
 
-    /*Ejercicio 2: El Cajero Automático Interminable (while)
+    //******************************************************************************************************************
+
+    /*
+    EJERCICIO 2: El Cajero Automático Interminable (while)
+
     Escenario: Estás programando el software de un cajero automático. El cajero debe permitir al usuario retirar dinero
      mientras tenga saldo suficiente. El programa no sabe cuántas veces el usuario querrá retirar dinero, por lo que
      debe continuar hasta que el usuario decida salir o se quede sin fondos.
@@ -55,8 +67,11 @@ public class Main {
     Si puede retirarlo, resta la cantidad al saldo y muestra el nuevo saldo.
     Si no puede, muéstrale un mensaje de "Saldo insuficiente".
       5.Pregúntale si desea realizar otra operación (puedes usar un '1' para sí y un '0' para no). El bucle debe
-       terminar si el usuario introduce un '0'.*/
-    /*System.out.println("Bienvenid@ a su cajero virtual: ");
+       terminar si el usuario introduce un '0'.
+     */
+
+    /*  CÓDIGO:
+    System.out.println("Bienvenid@ a su cajero virtual: ");
     System.out.println("Introduzca el saldo inicial: ");
     double saldo = teclado.nextDouble();
     teclado.nextLine();
@@ -92,9 +107,11 @@ public class Main {
         }
       }
 
-    }*/
+    }
+    */
 
 
+//**********************************************************************************************************************
 
     /*
     EJERCICIO 3: Validación de PIN de Seguridad (do-while)
@@ -197,9 +214,13 @@ public class Main {
 
     }
 
+    */
 
-  /*Ejercicio 6: Menú de Opciones de Usuario (do-while)
-  Escenario: Estás creando el panel de control de un usuario en una página web. Al entrar, el usuario ve un menú de opciones y debe elegir una. El menú debe mostrarse al menos una vez y seguir apareciendo hasta que elija la opción de "Salir".
+//********************************************************************************************************************
+
+/*EJERCICIO 6: Menú de Opciones de Usuario (do-while)
+  Escenario: Estás creando el panel de control de un usuario en una página web. Al entrar, el usuario ve un menú de
+  opciones y debe elegir una. El menú debe mostrarse al menos una vez y seguir apareciendo hasta que elija la opción de "Salir".
   Tu tarea:
     1.-Usa un bucle do-while para mostrar el menú y pedir una opción.
     2.-Dentro del bucle, muestra las siguientes opciones al usuario:
@@ -216,7 +237,8 @@ public class Main {
 
 Módulo 3: Control de un Robot Sencillo*/
 
-/*Ejercicio 7: Secuencia de Movimientos del Brazo Robótico (for)
+/*
+EJERCICIO 7: Secuencia de Movimientos del Brazo Robótico (for)
 Escenario: Estás programando un brazo robótico industrial que debe realizar una secuencia de movimientos
  precisos para ensamblar una pieza. El operario primero indica cuántos pasos tiene la secuencia.
 Tu tarea:
@@ -226,9 +248,12 @@ Tu tarea:
  (puedes pedir los dos números por separado).
 4. Dentro del bucle, muestra un mensaje simulando la acción. Por ejemplo:
  Movimiento 1: Brazo robótico moviéndose a la posición (X, Y).
-5. Al final, muestra un mensaje de "Secuencia de movimientos completada".*/
+5. Al final, muestra un mensaje de "Secuencia de movimientos completada".
+*/
 
-   /* int numPasos=0;
+/*     CÓDIGO:
+
+    int numPasos=0;
     double x = 0;
     double y = 0;
     System.out.println("Introduzca el número de pasos necesarios ->");
@@ -242,9 +267,12 @@ Tu tarea:
       y = teclado.nextDouble();
       System.out.println("Movimiento-" + i + ": Brazo desplazándose a la posición (" + x + ", " + y + ") ==>");
     }
-    System.out.println("******Secuencia de movimientos completada******");*/
+    System.out.println("******Secuencia de movimientos completada******");
 
-    /*Ejercicio 8: Robot Explorador en Bucle (while)
+*/
+
+    /*
+    EJERCICIO 8: Robot Explorador en Bucle (while)
     Escenario: Un pequeño robot explorador está en un planeta desconocido. El robot avanza y, tras cada avance,
      analiza el terreno que tiene delante. Debe continuar explorando hasta que su sensor detecte una "base segura".
     Tu tarea:
@@ -255,9 +283,11 @@ Tu tarea:
       4.Imprime un mensaje que indique lo que el robot está haciendo. Por ejemplo: Sensor detecta 'rocas'.
        El robot continúa explorando....
       5.Cuando el usuario finalmente introduce "base segura", el bucle termina y el programa debe imprimir:
-       "¡Base segura encontrada! Misión cumplida."*/
+       "¡Base segura encontrada! Misión cumplida."
+    */
 
-    /*
+    /*  CÓDIGO:
+
     System.out.println("Introduciendo las lecturas del sensor del robot ->");
     String lectura = "";
     int i=1;
@@ -272,6 +302,7 @@ Tu tarea:
       i++;
     }
     System.out.println("¡Base segura encontrada!. Misión cumplida.");
+
     */
 
 
