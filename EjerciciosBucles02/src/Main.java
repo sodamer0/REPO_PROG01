@@ -96,52 +96,106 @@ public class Main {
 
 
 
-  /*Ejercicio 3: Validación de PIN de Seguridad (do-while)
-  Escenario: Antes de acceder a su cuenta online, un cliente debe introducir su PIN de 4 dígitos. El sistema debe pedir el PIN al menos una vez y seguir pidiéndolo hasta que el usuario introduzca el PIN correcto.
-  Tu tarea:
-  1.
-  Define un PIN correcto en una variable dentro de tu programa (ej: 1234).
-  2.
-  Utiliza un bucle do-while. Este tipo de bucle es perfecto porque garantiza que el cuerpo del bucle (la pregunta del PIN) se ejecute al menos una vez.
-  3.
-  Dentro del bucle, pide al usuario que introduzca su PIN.
-  4.
-  El bucle debe repetirse mientras el PIN introducido sea diferente al PIN correcto.
-  5.
-  Cuando el usuario introduzca el PIN correcto, el bucle terminará y deberás mostrar un mensaje de "Acceso concedido".
-  Módulo 2: Gestión de una Tienda Online
-  Ejercicio 4: Carrito de la Compra (for)
-  Escenario: Eres el desarrollador de una plataforma de e-commerce. Necesitas implementar la funcionalidad del carrito de la compra que calcule el precio total de una serie de productos. El usuario primero indicará cuántos productos va a comprar.
-  Tu tarea:
-1.
-Primero, pregunta al usuario cuántos productos va a introducir en el carrito.
-2.
-Usa un bucle for que se repita exactamente ese número de veces.
-3.
-En cada iteración del bucle, pide al usuario el precio del producto actual.
-4.
-Suma ese precio a una variable que almacene el total de la compra.
-5.
-Al final del bucle, muestra el precio total que el cliente debe pagar.
-Ejercicio 5: Sistema de Valoración de Productos (while)
-Escenario: Tu web necesita un sistema para que los usuarios valoren un producto. Los usuarios pueden añadir una puntuación de 1 a 5 estrellas. El programa debe recoger todas las puntuaciones que los usuarios quieran introducir y finalmente calcular la valoración media.
-Tu tarea:
-1.
-Informa al usuario que puede introducir puntuaciones (de 1 a 5) y que para terminar debe introducir un cero (0).
-2.
-Usa un bucle while que se ejecute mientras la entrada del usuario no sea 0.
-3.
-Dentro del bucle:
-o
-Pide una puntuación.
-o
-Si la puntuación está entre 1 y 5, súmala a un total y aumenta un contador de cuántas valoraciones has recibido.
-o
-Si es otro número (que no sea 0), muestra un mensaje de error.
-4.
-Cuando el bucle termine (el usuario introduzca 0), calcula la puntuación media (total de puntos / número de valoraciones).
-5.
-Muestra la puntuación media final. ¡Cuidado con la división por cero si no se introduce ninguna valoración!*/
+    /*
+    EJERCICIO 3: Validación de PIN de Seguridad (do-while)
+    Escenario: Antes de acceder a su cuenta online, un cliente debe introducir su PIN de 4 dígitos. El sistema debe
+    pedir el PIN al menos una vez y seguir pidiéndolo hasta que el usuario introduzca el PIN correcto.
+    Tu tarea:
+    1.Define un PIN correcto en una variable dentro de tu programa (ej: 1234).
+    2.Utiliza un bucle do-while. Este tipo de bucle es perfecto porque garantiza que el cuerpo del bucle
+     (la pregunta del PIN) se ejecute al menos una vez.
+    3.Dentro del bucle, pide al usuario que introduzca su PIN.
+    4.El bucle debe repetirse mientras el PIN introducido sea diferente al PIN correcto.
+    5.Cuando el usuario introduzca el PIN correcto, el bucle terminará y deberás mostrar un mensaje de "Acceso concedido".
+    */
+
+    /*   CÓDIGO:
+    System.out.println("Bienvenido al sistema de validación: ");
+    int pinAcceso = 1234;
+    int pin=0;
+
+    System.out.println("Introduzca su PIN de acceso de Seguridad: ");
+    do{
+      pin = teclado.nextInt();
+      teclado.nextLine();
+      if(pin == pinAcceso){
+        System.out.println("Acceso condedido. Bienvenido a su espacio web.");
+        break;
+      }else
+        System.out.println("El PIN de acceso es incorrecto. Inténtelo de nuevo.");
+    }while(pin!=pinAcceso);
+    */
+
+//**********************************************************************************************************************
+
+
+    //Módulo 2: Gestión de una Tienda Online
+
+    /*
+    EJERCICIO 4: Carrito de la Compra (for)
+
+    Escenario: Eres el desarrollador de una plataforma de e-commerce. Necesitas implementar la funcionalidad del carrito
+    de la compra que calcule el precio total de una serie de productos. El usuario primero indicará cuántos productos va a comprar.
+    Tu tarea:
+    1.Primero, pregunta al usuario cuántos productos va a introducir en el carrito.
+    2.Usa un bucle for que se repita exactamente ese número de veces.
+    3.En cada iteración del bucle, pide al usuario el precio del producto actual.
+    4.Suma ese precio a una variable que almacene el total de la compra.
+    5.Al final del bucle, muestra el precio total que el cliente debe pagar.
+    */
+
+    /*   CÓDIGO:
+    System.out.println("Bienvenido a su carro de la compra: ");
+    System.out.println("Número de artículos que va a introducir en el carro ->");
+    int articulos = teclado.nextInt();
+    double precio = 0;
+    double importeTotal = 0;
+    teclado.nextLine();
+    for(int i=1; i<=articulos; i++){
+      System.out.println("Introduzca el precio del artículo número " + i + " ->");
+      precio = teclado.nextDouble();
+      importeTotal += precio;
+    }
+    System.out.printf("El importe total de su compra es de %.2f€.", importeTotal);
+
+    */
+
+//**********************************************************************************************************************
+
+    /*
+    EJERCICIO 5: Sistema de Valoración de Productos (while)
+    Escenario: Tu web necesita un sistema para que los usuarios valoren un producto. Los usuarios pueden añadir una
+     puntuación de 1 a 5 estrellas. El programa debe recoger todas las puntuaciones que los usuarios quieran introducir
+      y finalmente calcular la valoración media.
+    Tu tarea:
+    1.Informa al usuario que puede introducir puntuaciones (de 1 a 5) y que para terminar debe introducir un cero (0).
+    2.Usa un bucle while que se ejecute mientras la entrada del usuario no sea 0.
+    3.Dentro del bucle:
+      -Pide una puntuación.
+      -Si la puntuación está entre 1 y 5, súmala a un total y aumenta un contador de cuántas valoraciones has recibido.
+      -Si es otro número (que no sea 0), muestra un mensaje de error.
+    4.Cuando el bucle termine (el usuario introduzca 0), calcula la puntuación media (total de puntos / número de valoraciones).
+    5.Muestra la puntuación media final. ¡Cuidado con la división por cero si no se introduce ninguna valoración.
+    */
+
+    /*  CÓDIGO:
+
+    System.out.println("Queremos conocer su valoración de nuestro producto \"TEISCOITO\"");
+    System.out.println("Puede puntuar su nivel de satisfacción del 1 al 5 ->");
+    int estrellas=0;
+    teclado.nextLine();
+    int opcion=0;
+    teclado.nextInt();
+    double totalValoracion=0;
+    teclado.nextLine();e
+    while(opcion!=0 || ){
+      System.out.println("Introduzca su valoración ->");
+      estrellas = teclado.nextInt();
+      if((estrellas >=1 && estrellas<=5)){
+        totalValoracion += estrellas;
+      }
+
+    }
 
 
   /*Ejercicio 6: Menú de Opciones de Usuario (do-while)
