@@ -147,23 +147,19 @@ Muestra la puntuación media final. ¡Cuidado con la división por cero si no se
   /*Ejercicio 6: Menú de Opciones de Usuario (do-while)
   Escenario: Estás creando el panel de control de un usuario en una página web. Al entrar, el usuario ve un menú de opciones y debe elegir una. El menú debe mostrarse al menos una vez y seguir apareciendo hasta que elija la opción de "Salir".
   Tu tarea:
-  1. Usa un bucle do-while para mostrar el menú y pedir una opción.
-  2. Dentro del bucle, muestra las siguientes opciones al usuario:
-  3. Menú de Usuario:
-  4.
-  1. Ver mi perfil
-  5.
-  2. Modificar dirección de envío
-  6.
-  3. Ver historial de pedidos
-  7.
-  4. Salir
-8.
-Pide al usuario que elija una opción (introduciendo un número del 1 al 4).
-9.
-Usa una estructura de control (como if-else o switch) para mostrar un mensaje diferente según la opción elegida (ej: "Cargando tu perfil...").
-10.
-El bucle debe continuar repitiéndose mientras la opción elegida por el usuario no sea la 4 (Salir).
+    1.-Usa un bucle do-while para mostrar el menú y pedir una opción.
+    2.-Dentro del bucle, muestra las siguientes opciones al usuario:
+      Menú de Usuario:
+        1. Ver mi perfil
+        2. Modificar dirección de envío
+        3. Ver historial de pedidos
+        4. Salir
+    3.-Pide al usuario que elija una opción (introduciendo un número del 1 al 4).
+    4.-Usa una estructura de control (como if-else o switch) para mostrar un mensaje diferente según la opción elegida (ej: "Cargando tu perfil...").
+    5.-El bucle debe continuar repitiéndose mientras la opción elegida por el usuario no sea la 4 (Salir).
+
+//**********************************************************************************************************************
+
 Módulo 3: Control de un Robot Sencillo*/
 
 /*Ejercicio 7: Secuencia de Movimientos del Brazo Robótico (for)
