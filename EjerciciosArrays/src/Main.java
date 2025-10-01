@@ -54,6 +54,7 @@ public class Main {
     /*
       EJERCICIO_03: Leer 5 números y mostrarlos en orden inverso al introducido.
      */
+    /*
     System.out.println("Introduzca 5 números enteros para mostrarlos en orden inverso:");
     int [] array03 = new int[5];
     for(int i=0;i<5;i++){
@@ -63,6 +64,16 @@ public class Main {
     imprimirArray(array03);
     int [] array03Inverso = inversor(array03);
     imprimirArray(array03Inverso);
+    */
+
+
+    //EJERCICIO_04: Realizar una aplicación que devuelva si una palabra es un palíndromo o no.
+
+    System.out.println("Introduzca una palabra para comprobar si es palíndroma o no: ");
+    String palabraPrueba = teclado.nextLine();
+
+    String resultado = verPalindromia(palabraPrueba)? "Es palíndroma" : "No es palídroma.";
+    System.out.println(resultado);
 
 
 
@@ -71,8 +82,7 @@ public class Main {
 
 
 
-
-    /*  EJERCICIO_04 Realizar una aplicación que devuelva si una palabra es un palíndromo o no.
+    /*
       EJERCICIO_05: Realiza una aplicación con la que puedas jugar con la máquina a pares o nones.
         -El número que escoja la máquina deberá ser aleatorio y evidentemente de estar
         entre el 1 y el 5 (dedos de una mano).
@@ -133,7 +143,22 @@ public class Main {
     return arrayAux;
   }
 
-
+  public static boolean verPalindromia(String palabra){
+    char [] palabraDes = new char[palabra.length()];
+    char [] palabraDesInv = new char[palabraDes.length];
+    for (int i=0; i<palabra.length();i++){
+      palabraDes[i] = palabra.charAt(i);
+    }
+    for (int i=palabraDes.length-1, j=0;i>=0;i--,j++){
+      palabraDesInv[j] = palabraDes[i];
+    }
+    for(int i=0;i<palabraDes.length;i++){
+      if (palabraDes[i] == palabraDesInv[i]){
+        return true;
+      }
+    }
+    return false;
+  }
 
 
 
