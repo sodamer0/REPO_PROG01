@@ -79,9 +79,6 @@ public class Main {
 
 
 
-
-
-
   public static void dibujarHorca(int num){
 
       switch(num) {
