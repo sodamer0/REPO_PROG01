@@ -19,14 +19,14 @@ public class   Main {
     */
     //EJERCICI0_02. Modifica el programa anterior para que solo se impriman por pantalla los números impares.
 
-
+    /*
     System.out.println("Introduzca un número ->");
     int numero3 = teclado.nextInt();
     System.out.println("Introduzca un segundo número ->");
     int numero4 = teclado.nextInt();
     ejercicio02(numero3, numero4);
+    */
 
-  }
 
 
     /*
@@ -40,24 +40,38 @@ public class   Main {
 
 
 /*
+  EJERCICIO_04. Crea una aplicación que dados 5 números por teclado los vaya sumando hasta que el valor sea mayor que
+ 3000. Cuando finalice se quiere saber cuántas iteraciones tuvo que hacer.
+ */
 
 
-4. Crea una aplicación que dados 5 números por teclado los vaya sumando hasta
 
-que el valor sea mayor que 3000. Cuando finalice se quiere saber cuántas
-iteraciones tuvo que hacer.*/
-/*
-  5. Una empresa necesita una aplicación para validar DNI. El programa deberá de
-pedir DNIs en la clase main hasta que escribamos un 0 para salir. Debemos
-hacer otra clase que se llame ValidadorDni que llamando a una función de su
-clase “validar()” nos devuelva un Boolean. Los DNI cumplan el patrón descrito
-por la administración
-a. Longitud de 9 caracteres.
-b. Los caracteres de 1 al 8 deben de ser números, el noveno será letra.
-c. No son válidos los siguientes DNI: 00000000T, 00000001R, 99999999R.
-d. La letra se calcula dividiendo los 8 dígitos entre 23. El resultado del resto
-de esa división determina la letra según la siguiente tabla.*/
+  /*
+  5. Una empresa necesita una aplicación para validar DNI. El programa deberá de pedir DNIs en la clase main hasta que
+   escribamos un 0 para salir. Debemos hacer otra clase que se llame ValidadorDni que llamando a una función de su
+  clase “validar()” nos devuelva un Boolean. Los DNI cumplan el patrón descrito por la administración:
+    a. Longitud de 9 caracteres.
+    b. Los caracteres de 1 al 8 deben de ser números, el noveno será letra.
+    c. No son válidos los siguientes DNI: 00000000T, 00000001R, 99999999R.
+    d. La letra se calcula dividiendo los 8 dígitos entre 23. El resultado del resto de esa división determina
+     la letra según la siguiente tabla.
+   */
 
+    System.out.println("Introduzca el numero del DNI-> ");
+    int numeroDni = teclado.nextInt();
+    teclado.nextLine();
+    System.out.println("Introduzca la letra del DNI->");
+    char letraDNI = teclado.nextLine().charAt(0);
+
+    ValidadorDNI comprobacion = new ValidadorDNI();
+
+    String respuesta = (comprobacion.validar(numeroDni,letraDNI))? "Dni válido":"Dni NO válido";
+    System.out.println(respuesta);
+
+
+
+
+  }
 
   public static void ejercicio01(int num1, int num2) {
 
@@ -141,7 +155,7 @@ de esa división determina la letra según la siguiente tabla.*/
             System.out.print(", ");
           }
           System.out.print(i);
-          contador+;
+          contador++;
           hayImpar = true;
         }
       }
