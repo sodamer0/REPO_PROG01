@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Boletin1/Boletin1.iml" filepath="$PROJECT_DIR$/Boletin1/Boletin1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Boletin01/Boletin01.iml" filepath="$PROJECT_DIR$/Boletin01/Boletin01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Boletin02/Boletin02.iml" filepath="$PROJECT_DIR$/Boletin02/Boletin02.iml" />
       <module fileurl="file://$PROJECT_DIR$/EjerciciosArrays/EjerciciosArrays.iml" filepath="$PROJECT_DIR$/EjerciciosArrays/EjerciciosArrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/EjerciciosArrays02/EjerciciosArrays02.iml" filepath="$PROJECT_DIR$/EjerciciosArrays02/EjerciciosArrays02.iml" />
       <module fileurl="file://$PROJECT_DIR$/EjerciciosBasicosJava.java/EjerciciosBasicosJava.java.iml" filepath="$PROJECT_DIR$/EjerciciosBasicosJava.java/EjerciciosBasicosJava.java.iml" />

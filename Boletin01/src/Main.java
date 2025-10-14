@@ -20,10 +20,13 @@ public class Main {
     // BOLETÍN1_8: Desarrolla una metodo en la que, averigüe si es un número Armstrong. Un número es Armstrong cuando
     // la suma de cada uno de los números que lo componen elevado al número de dígitos de dicho número da como resultado
     //  el propio número. Por ejemplo: 153 = 1^3+5^3+3^3
-
+    /*
     System.out.println("Introduzca un número de tres dígitos para comprobar si es Armstrong->");
     int numArm = teclado.nextInt();
     numerosArmstrong(numArm);
+    */
+
+
 
 
     /*
@@ -38,6 +41,16 @@ public class Main {
 
     pasarABilletes(euros);
     */
+    /*
+    EJERCICIOS_SEMANALES: Patrones de dígitos: recibe un número entero de al menos 10 dígitos y determina la longitud
+     de la mayor subsecuencia de dígitos consecutivos pares (la mayor cantidad de números consecutivos pares) .
+    */
+    System.out.println("Introduce un número de al menos 10 dígitos->");
+    String cifra = teclado.nextLine();
+    patronesDigitos(cifra);
+
+
+
 
   }//main
 
@@ -162,7 +175,38 @@ public class Main {
       System.out.println("✅ El número " + numero + " es un número Armstrong.");
     }else
       System.out.println("❌ El número " + numero + " NO es un número Armstrong.");
-  }
+
+  }//numerosAmstrong
+
+  public static void patronesDigitos(String numero){
+
+    int[] digitos = new int[numero.length()];
+
+    if(numero.length()<10){
+      System.out.println("Por favor, introduzca un número de al menos 10 dígitos.");
+    }else{
+
+      int maximoRacha = 0;
+      int racha = 0;
+      for (int i = 0; i < numero.length(); i++){
+        if (Integer.parseInt(String.valueOf(numero.charAt(i))) % 2 == 0){
+          racha++; //Cada vez que se encuentra un numero par se aumenta "racha".
+        }else
+          racha = 0;//Cada vez que aparece un impar se interrumpe la racha.
+
+        if (racha > maximoRacha){
+          maximoRacha = racha; //El número máximo de racha va a ser el número máximo
+                                // de veces que se encuentran números pares consecutivos.
+        }
+      }
+      System.out.println("La secuencia mayor de números pares es de " + maximoRacha + " números.");
+    }
+
+  }//Patrones de dígitos
+
+
+
+
 
 
 }//Main
