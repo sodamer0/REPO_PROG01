@@ -79,11 +79,18 @@ public class Main {
    de nacimiento a un número de un solo dígito. Por ejemplo: 16-08-1973 -> 16+8+1973 = 1997 -> 1+9+9+7 = 26 -> 2+6 = 8.
     El número de la suerte sería el 8.*/
 
-
-    System.out.println("Introduzca su fecha de nacimiento sin espacios para calcular su Número de la Suerte ->");
-    int cumpleanhos = teclado.nextInt();
+    /*
+    System.out.println("Introduzca su fecha de nacimiento, sin espacios, para calcular su Número de la Suerte ->");
+    String cumpleanhos = teclado.nextLine();
 
     numeroSuerte(cumpleanhos);
+    */
+
+    System.out.println("Introduzca su fecha de nacimiento, sin espacios, para calcular su Número de la Suerte ->");
+    int cumpleanhos = teclado.nextInt();
+    teclado.nextLine();
+
+    System.out.println("Para la fecha introducida el Número de la Suerte es el: [" + numeroSuerte02(cumpleanhos) + "]");
 
   }//main
 
@@ -179,46 +186,56 @@ public class Main {
     System.out.print(" }");
 
 
-  }
+  }//sinMultiplosDel5
 
 
-  public static void numeroSuerte(int fecha){
+  public static void numeroSuerte01(String fecha) {
 
-    String strFecha = String.valueOf(fecha); //Convierto el número en String
+    char[] arrayComparar = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
 
-    int [] arrayFecha = new int [strFecha.length()]; //Creo un array del tamaño del número.
+    while (fecha.length() > 1){
+
+      int sumaDigitos = 0;
+
+      for (int i=0; i<fecha.length(); i++) {
+        char digito = fecha.charAt(i);
+
+        for (int j = 0; j < arrayComparar.length; j++) {
+          if (digito == arrayComparar[j]) {
+            sumaDigitos += j;
+          }
+        }//for1
+      }//for1
+      fecha = String.valueOf(sumaDigitos);
+    }//while
+
+    System.out.println("El Número de la Suerte para la fecha dada es " + fecha);
+
+  }//numeroSuerte
 
 
 
-    int numeroSuerte = 0;
+  public static int numeroSuerte02(int fecha){
 
-    for (int i=0; i<strFecha.length(); i++){ //Bucle para rellenar un array con los caracteres del String.
-      //Se rellena cada elemento del array con el char correspondiente del String ya convertido en int.
-      arrayFecha[i] = Integer.parseInt(String.valueOf(strFecha.charAt(i)));
+    int numFecha = fecha;
 
+    while (numFecha >= 10) { //Condición: mientras la cifra de la fecha tenga dos dígitos.
+      int sumaCifras = 0; //
+        while (numFecha != 0) { //Condición: mientras la cifra sea distinta de cero.
+          sumaCifras += numFecha % 10;//*Con cada iteración se suma el resto para /10, que es el
+                                    // último dígito del número
+          numFecha /= 10; //La fecha se va reduciendo a razón de una división entera (/ 10) por bucle,
+                        // que da el número sin su último dígito.
+        }
+        numFecha = sumaCifras; //Para evaluar el while 1 se iguala numFecha con el valor
+                              // de la suma de los dígitos hasta que sea menor que 10.
     }
 
-    int suma = 0;
+    return numFecha;
 
-    for (int i=0; i<arrayFecha.length; i++){
-      suma += arrayFecha[i];
-    }
+  }//numeroSuerte02
 
-    String strSuma = String.valueOf(suma);
 
-    int [] arraySuma = new int [strSuma.length()];
-
-    int suma2 = 0;
-
-    for (int i=0; i<arraySuma.length; i++){
-      arraySuma[i] = Integer.parseInt(String.valueOf(strSuma.charAt(i)));
-      suma2 += arraySuma[i];
-    }
-
-    numeroSuerte = suma2;
-
-    System.out.println("Su número de la Suerte es el " + numeroSuerte);
-  }
 
 
 
