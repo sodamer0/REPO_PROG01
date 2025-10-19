@@ -1,7 +1,7 @@
+import java.util.Random;
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
 
   private static Scanner teclado = new Scanner(System.in);
@@ -24,17 +24,29 @@ public class Main {
     //validarFecha();
     validarFecha2();
 
-    //4: Pedir solo un número. Determinar si es un número es primo o no.
+    //EJERCICIO_REPASO_04: Pedir solo un número. Determinar si es un número es primo o no.
+
+
+
+
     /*
-    5: Se creará un número random del 56 al 108 e intentaremos adivinar cual es.
+    EJERCICIO_REPASO_05: Se creará un número random del 56 al 108 e intentaremos adivinar cual es.
       El programa tendrá que pedirte dos números.
       • El primero, cuando se pida por teclado se multiplicará por el número random.
       Solo está permitido números impares mayores de 50.
-      • Se mostrará el resultado de la multiplicación
-      • El segundo número será tu intento para adivinar el número random
+      • Se mostrará el resultado de la multiplicación.
+      • El segundo número será tu intento para adivinar el número random.
       Si has acertado, ganas el juego. Si no, sigues intentándolo de nuevo hasta un máximo
-      de 3 intentos
+      de 3 intentos.
     */
+    /*
+    System.out.println("Bienvenido a este juego: Descubra el número secreto: Siga las instrucciones ->");
+
+    pedirDosNumeros();
+    */
+
+
+    //main
   }
 
 
@@ -166,5 +178,57 @@ public class Main {
     }
   }
 
+  public static void pedirDosNumeros(){
 
+    Random rand = new Random();
+    int userNumber1 = 0;
+    int userNumber2 = 0;
+    int randomSecretNumber = rand.nextInt(108 - 56 + 1) + 56;
+
+    System.out.println("Por favor, introduzca un número impar mayor de 50 ->");
+
+    do{
+      userNumber1 = teclado.nextInt();
+      if (userNumber1 % 2 != 0 && userNumber1 > 50){
+        int producto = userNumber1 * randomSecretNumber;
+        System.out.println("El número proporcionado, multiplicado por el número secreto da como resultado: " + producto);
+        System.out.println("Ahora, intente adivinar el número secreto ->");
+        boolean adivinado = false;
+
+        for(int i=1; i<=3; i++){
+          userNumber2 = teclado.nextInt();
+
+          if (userNumber2 == randomSecretNumber){
+            System.out.println("Enhorabuena!. Ha acertado el número secreto!: " + randomSecretNumber);
+            adivinado = true;
+            break;
+          }else{
+            if (i<3){
+              System.out.println("Ese no es el número secreto! Inténtelo otra vez->");
+              System.out.println("Le quedan " + (3 - i) + " intentos.");
+            }
+          }
+        }
+
+        if (!adivinado){
+          System.out.println("Lo siento, ha perdido!. Juegue otra vez.");
+        }
+        break;
+
+      }else{
+        System.out.println("Por favor, número no válido. Inténtelo otra vez->");
+      }
+
+    }while(userNumber1 % 2 == 0 || userNumber1 <= 50);
+
+
+
+
+    //pedirDosNumeros
+  }
+
+
+
+
+  //Main
 }
