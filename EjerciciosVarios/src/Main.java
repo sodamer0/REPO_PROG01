@@ -41,7 +41,7 @@ public class Main {
     numero. A continuación, muestra el contenido de los tres arrays dispuesto en tres
     columnas.
      */
-
+    /*
     int [] numero = inicializarArray();
 
     imprimirArrayColumna(numero);
@@ -53,9 +53,57 @@ public class Main {
     int [] cubo = cuboArray(numero);
 
     imprimirArrayColumna(cubo);
+    */
 
 
+    /*
+    Ejercicio 5
+    Escribe un programa que pida 10 números por teclado y que luego muestre los
+    números introducidos junto con las palabras “máximo” y “mínimo” al lado del
+    máximo y del mínimo respectivamente.
+    */
 
+
+    //int [] arrayNumeros = inicializarArray();
+
+    //encontrarMaxMin(arrayNumeros);
+
+    /*
+    Ejercicio 6
+    Escribe un programa que lea 15 números por teclado y que los almacene en un
+    array. Rota los elementos de ese array, es decir, el elemento de la posición 0
+    debe pasar a la posición 1, el de la 1 a la 2, etc. El número que se encuentra en
+    la última posición debe pasar a la posición 0. Finalmente, muestra el contenido
+    del array.
+    */
+
+    /*
+    Halla el número de calificaciones D, C, B y A del último examen de informática,
+    donde n estudiantes de una clase aprobaron el examen.
+    El programa obtiene el número n como primera línea de entrada.
+    Esto significa que habrá n calificaciones. Luego, el programa obtiene las calificaciones,
+    cada una en una línea diferente.
+    Crea un programa para contar la ocurrencia de cada calificación y genera cuatro números en
+    una sola línea: el número de calificaciones D, C, B y A (en ese orden), separados por espacios en blanco.
+     */
+
+
+    //clasificarNotas();
+
+
+    /*
+    La clase LandOfNumbers contiene el metodo "summitSpecialNumbers" que calcula la suma de los primeros
+    n números impares positivos. Dada una entrada n, el metodo genera la secuencia de números impares comenzando
+    desde 1 (es decir, 1, 3, 5, ..., hasta el n-ésimo número impar) y devuelve su suma total. Esto se logra iterando
+    n veces, recorriendo números impares consecutivos comenzando en 1 e incrementando en 2 en cada iteración,
+    y luego acumulando sus valores.
+    Esta implementación aprovecha eficazmente el patrón matemático de que la suma de los primeros n números impares
+    siempre es igual a n², aunque calcula el resultado iterativamente en lugar de usar la fórmula directa.
+    El propósito del metodo es generar esta suma de forma fiable para cualquier entero no negativo n.
+     */
+
+    int num = teclado.nextInt();
+    System.out.println(summonSpecialNumbers(num));
     //main
   }
 
@@ -155,6 +203,72 @@ public class Main {
     }
     System.out.println();
   }
+
+
+  public static void encontrarMaxMin(int [] array) {
+
+    int min = array[0];
+    int max = array[array.length-1];
+
+    for ( int i=0; i<array.length; i++ ) {
+      if ( array[i] > max ) {
+        max = array[i];
+      }else if ( array[i] < min ) {
+        min = array[i];
+      }
+    }
+
+    for ( int i=0; i<array.length; i++ ) {
+
+      if ( array[i] == max ) {
+        System.out.print(array[i] + "->MÁX ");
+      } else if ( array[i] == min ) {
+        System.out.print(array[i] + "->MÍN ");
+      } else {
+        System.out.print(array[i] + "  ");
+      }
+    }
+
+
+
+
+    //encontrarMaxMin
+  }
+
+  public static void clasificarNotas(){
+
+    int numDeNotas = teclado.nextInt();
+    char calificacion;
+    int countA = 0;
+    int countB = 0;
+    int countC = 0;
+    int countD = 0;
+
+
+    for ( int i = 0; i<numDeNotas; i++ ) {
+      calificacion = teclado.next().charAt(0);
+      if ( calificacion == 'A' )  {
+        countA++;
+      } else if ( calificacion == 'B' ){
+        countB++;
+      } else if ( calificacion == 'C' ) {
+        countC++;
+      } else if ( calificacion == 'D' ) {
+        countD++;
+      }
+    }
+    System.out.println(countD + " " + countC + " " +  countB + " " + countA);
+
+  }
+
+
+    public static int summonSpecialNumbers(int n) {
+      int suma = 0;
+      for (int i = 0; i < n; i++) {
+        suma += 1 + 2 * i;
+      }
+      return suma;
+    }
 
 
 
