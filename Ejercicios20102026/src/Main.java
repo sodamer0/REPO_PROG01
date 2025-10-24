@@ -24,7 +24,7 @@ public class Main {
 
     imprimirArray(nuevoArray);
     */
-
+    /*
     Random rand = new Random();
 
     int [] arrayRandom = new int [20];
@@ -35,7 +35,7 @@ public class Main {
 
 
     separarParImpar(arrayRandom);
-
+    */
     /*
     2. 	Crear 20 números random. Después contar de esos 20 números cuantos pares e impares hay.
     El programa creará 2 arrays, uno de pares y otro de impares con el tamaño correcto en base al número de pares
@@ -52,7 +52,22 @@ public class Main {
     debe contener n+m. Después se debe mostrar su contenido.
     */
 
+        /*
+      .................................................................................................
+      ARRAYS_EJERCICIO_07:
+        Escribe un programa que genere 100 números aleatorios del 0 al 20 y que los
+        muestre por pantalla separados por espacios. El programa pedirá entonces por
+        teclado dos valores y a continuación cambiará todas las ocurrencias del primer
+        valor por el segundo en la lista generada anteriormente. Los números que se
+        han cambiado deben aparecer entrecomillados.
+      .................................................................................................
+        */
 
+    System.out.println("Introduzca dos números cualquiera: ");
+    int numero1 = teclado.nextInt();
+    int numero2 = teclado.nextInt();
+
+    sustituirDosNum(numero1, numero2);
 
 
 
@@ -125,7 +140,17 @@ public class Main {
     //separarParImpar
   }
 
+  public static void sustituirDosNum(int num1, int num2) {
 
+    int [] arrayNums = new int [100];
+
+    Random rand = new Random();
+
+    for (int i=0; i<100; i++) {
+      arrayNums[i] = rand.nextInt(20);
+      System.out.print(arrayNums[i] + " ");
+    }
+  }
 
 
 
