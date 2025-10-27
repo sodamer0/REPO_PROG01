@@ -1,3 +1,5 @@
+package ejercicios03Tests;
+
 import java.util.Scanner;
 
 public class Main {
@@ -7,7 +9,7 @@ public class Main {
   public static void main(String[] args) {
 
     /*
-    Crear las siguientes funciones en el Main.
+    Crear las siguientes funciones en el ejercicios03Tests.Main.
     Recuerda que al estar dentro de la clase main, las funciones deben de ser estáticas.
     El departamento de RRHH de nuestra empresa nos ha pedido que le desarrollemos unas utilidades para simplificarles
     su trabajo.
@@ -89,23 +91,40 @@ AT	3	2	6			AT	2	9
 
   public static double getPayroll(double salary, int children, double percentage, boolean disability) {
 
-
     double finalSalary = 0;
 
+    double disabilityHelp = 0;
 
-    return finalSalary;
+    if (children > 0 && children <= 2 ) {
+      percentage = percentage - (double) (children);
+    } else if (children >= 3) {
+      percentage = percentage - (double) 3;
+    }
+
+      if (disability) {
+        disabilityHelp = 500;
+      } else {
+        disabilityHelp = 0;
+      }
+
+      finalSalary = salary - (salary * percentage/100) + disabilityHelp;
+
+      return finalSalary;
   }
 
+    public static double[][] transposeMatrix ( double[][] matrix){
+
+      double[][] matrizT = new double[3][3];
+
+      for (int i = 0; i < matrix.length; i++) {
+        for (int j = 0; j < matrix[0].length; j++) {
+
+          matrizT[i][j] = matrix[j][i];
+        }
+      }
+      return matrizT;
+    }
 
 
-
-  public static double[][] transposeMatrix(double[][] matrix) {
-
-    double [][] matrizTrans = new double[3][3];//al cubrir
-
-    return matrizTrans;
-  }
-
-
-  //Main
+  //ejercicios03Tests.Main
 }

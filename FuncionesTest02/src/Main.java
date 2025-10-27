@@ -2,7 +2,7 @@ public class Main {
 
 
     /*
-  Crear las siguientes funciones en el Main.
+  Crear las siguientes funciones en el ejercicios03Tests.Main.
   Recuerda que al estar dentro del main, las funciones deben de ser estáticas.
   1. Crea una función que sea checkWordLength(String word) que devuelva la longitud de cada palabra que se le envíe como
    parámetro.
@@ -115,5 +115,5 @@ public class Main {
 
 
 
-  //Main
+  //ejercicios03Tests.Main
 }
