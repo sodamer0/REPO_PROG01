@@ -23,16 +23,51 @@ public class Main {
 
     imprimirArray(notasMedsAsignaturas);
 
+
+    int [] arrayNotasMedAluOrd = ordAlumsxNotMedTot(mediasAlumnos);
+
+    imprimirArray(arrayNotasMedAluOrd);
+
+
+
     //main
+  }
+
+
+  public static int[] ordAlumsxNotMedTot (int[][] matrizX) {
+
+    int[][] ordenSegunMedia = new int[matrizX.length][matrizX[0].length];
+
+    int[] mediaNotasAlum = new int[matrizX.length];
+
+    for (int i = 0; i < matrizX.length; i++) {
+      int sumaNotas = 0;
+      int mediaNotasMax = 0;
+      for (int j = 0; j < matrizX[0].length; j++) {
+        sumaNotas += matrizX[i][j];
+        mediaNotasAlum[i] = sumaNotas / matrizX[0].length;
+        mediaNotasMax = mediaNotasAlum[0];
+        if (mediaNotasAlum[i] > mediaNotasMax) {
+          mediaNotasMax = mediaNotasAlum[i];
+        }else {
+
+        }
+      }
+
+    }
+    return mediaNotasAlum;
   }
 
 
 
 
 
-  public static int[] calNotasMedsMaterias (int [][] matrizX) {
 
-    int [] notasMedsMaterias = new int [matrizX[0].length];
+
+
+  public static int[] calNotasMedsMaterias (int[][] matrizX) {
+
+    int[] notasMedsMaterias = new int [matrizX[0].length];
 
       for (int j = 0; j < matrizX[0].length; j++) {
         int sumaColumna = 0;
@@ -67,6 +102,13 @@ public class Main {
     }
     System.out.println("\n");
   }
+
+
+
+
+
+
+
 
 
 

@@ -52,7 +52,7 @@ public class Main {
 
 
     //Apartado 1:
-
+/*
     System.out.println("Calcular las notas medias por alumno (filas)");
 
     int [] notasMedias = MatrizAlumnos01.calNotasMedsAlumnos(mediasAlumnos02);
@@ -78,6 +78,16 @@ public class Main {
     int [] porcentAprobAsignaturas = MatrizAlumnos03.calPorcentAprobMateria(mediasAlumnos02);
 
     Utilidades.imprimirArray(porcentAprobAsignaturas);
+*/
+    //Apartado 4:
+
+    System.out.println("Obtener una nueva matriz de notas con los alumnos ordenados por sus medias totales de menor a mayor.");
+
+    //int[] arrayNotasMediasAlumnos = MatrizAlumnos04.
+
+    int [][] matrizNotasMedias = MatrizAlumnos04.ordSegunMedia(mediasAlumnos02);
+
+    Utilidades.imprimirMatriz(matrizNotasMedias);
 
     //main
   }
