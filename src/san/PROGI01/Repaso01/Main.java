@@ -14,9 +14,9 @@ public class Main {
         • Requisito 1: Que sea par y que al multiplicarlo por 5 sea mayor que 25
         • Requisito 2: Que sea impar y que al multiplicarlo por 3 sea menor que 10
       */
-    PedirNumeros pNum = new PedirNumeros();
+    //PedirNumeros pNum = new PedirNumeros();
 
-    pNum.pedirNumeros();
+    //pNum.pedirNumeros();
 
 
     //2: Pedir un número N, y mostrar todos los números del 1 al N.
@@ -52,9 +52,7 @@ public class Main {
 
     //main
   }
-
-
-
+  
 
   public static void numerosHastaN(){
     int numero;
