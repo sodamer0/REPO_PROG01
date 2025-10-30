@@ -1,4 +1,4 @@
-package src.Shooter;
+package san.TESTSPI.Shooter;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

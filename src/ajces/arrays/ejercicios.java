@@ -1,18 +1,12 @@
 package ajces.arrays;
-
-public class ejercicios {
-
-  package AJCEJ;
-
 import java.util.Random;
 import java.util.Scanner;
 import javax.sound.sampled.SourceDataLine;
+public class ejercicios {
 
-  public class Arrays {
+  private static Scanner teclado = new Scanner (System.in);
 
-    private static Scanner teclado = new Scanner (System.in);
-
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
       /*
       .................................................................................................
@@ -338,4 +332,4 @@ import javax.sound.sampled.SourceDataLine;
 
 
 
-}
+

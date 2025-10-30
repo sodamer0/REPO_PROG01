@@ -9,6 +9,14 @@ public class Main {
   private static Scanner teclado = new Scanner(System.in);
 
   public static void main(String[] args) {
+
+
+
+
+    maxNumSinAlm.darMaxNumSinAlm();
+
+
+
       /*
     1: Pedir números indefinidamente. A medida que se piden números solo queremos
       mostrar los que cumplan al menos uno de los siguientes requisitos:

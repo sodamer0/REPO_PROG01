@@ -95,10 +95,16 @@ AT	3	2	6			AT	2	9
 
     double disabilityHelp = 0;
 
-    if (children > 0 && children <= 2 ) {
-      percentage = percentage - (double) (children);
-    } else if (children >= 3) {
-      percentage = percentage - (double) 3;
+    if (children > 0) {
+      if (children <= 2) {
+        // 1 o 2 hijos: 1% por cada uno
+        percentage = percentage - children;
+      } else {
+        // 3 o más hijos:
+        // 2% por los primeros dos + 3% por cada uno desde el tercero
+        int hijosAdicionales = children - 2;
+        percentage = percentage - 2 - (hijosAdicionales * 3);
+      }
     }
 
     if (disability) {
