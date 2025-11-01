@@ -9,7 +9,7 @@ public class Main {
   public static void main(String[] args) {
 
     /*
-    Crear las siguientes funciones en el ejercicios03Tests.Main.
+    Crear las siguientes funciones en el ejercicios03Tests.san.TESTSPI.Sensores.san.TESTSPI.Sensores.probando.Main.
     Recuerda que al estar dentro de la clase main, las funciones deben de ser estáticas.
     El departamento de RRHH de nuestra empresa nos ha pedido que le desarrollemos unas utilidades para simplificarles
     su trabajo.
@@ -132,6 +132,6 @@ AT	3	2	6			AT	2	9
   }
 
 
-  //ejercicios03Tests.Main
+  //ejercicios03Tests.san.TESTSPI.Sensores.san.TESTSPI.Sensores.probando.Main
 }
 

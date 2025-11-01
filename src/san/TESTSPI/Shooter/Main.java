@@ -2,11 +2,9 @@ package san.TESTSPI.Shooter;
 
 public class Main {
   public static void main(String[] args) {
-
   }
 
-  public static int getDamage (int speed, int armor, int distance){
-
+  public static int getDamage(int speed, int armor, int distance) {
     int damage = 0; // Inicializa el daño
     // CASO 1: Disparo cercano (≤ 3 metros)
     // A corta distancia, el impacto ignora completamente la armadura
@@ -29,7 +27,6 @@ public class Main {
     else {
       damage = (speed / 10) - (armor + (distance / 10));
     }
-
     // PROTECCIÓN CONTRA DAÑO NEGATIVO:
     // Si la armadura es muy alta, el daño podría ser negativo
     // En ese caso, devolvemos 0 (sin daño)
@@ -39,7 +36,7 @@ public class Main {
     return damage;
   }
 
-  public static boolean isDeadByBodyShot (int life, int damage){
+  public static boolean isDeadByBodyShot(int life, int damage) {
   /*
     if ((life - damage) <=0) {
       return true;
@@ -48,7 +45,7 @@ public class Main {
     return (life - damage) <= 0;
   }
 
-  public static int getNumObjects (boolean[][] map){
+  public static int getNumObjects(boolean[][] map) {
 
     int localizador = 0;
     for (int i = 0; i < map.length; i++) {
@@ -61,40 +58,34 @@ public class Main {
     return localizador;
   }
 
-  public static boolean isHit (boolean [][] screen, int y, int x){
+  public static boolean isHit(boolean[][] screen, int y, int x) {
 
-    for (int i = 0; i < screen.length; i++) {
-      for (int j = 0; j < screen[0].length; j++) {
-        if (screen[y][x]) {
-          return true;
+        if ( (y >= 0 && y < screen.length) && (x >= 0 && x < screen[0].length)) {
+          return screen[y][x];
         }
-      }
-    }
+
     return false;
   }
 
-  public static boolean isHeadShot (boolean [][] screen, int y, int x){
+  public static boolean isHeadShot(boolean[][] screen, int y, int x) {
 
-    boolean [][] enemyMatrix = new boolean[5][3];
-    for (int t = 0; t < 5; t++) {
-      for (int j = 0; j < 3; j++) {
-        enemyMatrix[t][j] = true;
-      }
+          if ((y >= 0 && y < screen.length) && (x >= 0 && x < screen[0].length)) {
+            if (screen[y][x]) {
+              ((y >= 0 && y < screen.length - 5) && (x >= 0 && x < screen[0].length - 3)) {
 
-    for (int i = 0; i <= screen.length - 5; i++) {
-      for (int j = 0; j <= screen[0].length - 3; j++) {
-        if (screen[i][j])
-
-        }
-        }
-      }
-    }
-
+              }
+            }
+          }
     return false;
   }
+
+
+
 
   public static int[] getEnemyPosition (boolean[][] screen){
     return new int[]{0, 0};
   }
 
+
+ //san.TESTSPI.Sensores.san.TESTSPI.Sensores.probando.Main
 }
