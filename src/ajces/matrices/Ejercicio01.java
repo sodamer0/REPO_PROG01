@@ -2,7 +2,7 @@ package ajces.matrices;
 
 import java.util.Random;
 
-public class Ejercicio07 {
+public class Ejercicio01 {
 
       /*
     .................................................................................................
@@ -49,5 +49,5 @@ public class Ejercicio07 {
 
 
 
-//Ejercicio07
+//Ejercicio01
 }
