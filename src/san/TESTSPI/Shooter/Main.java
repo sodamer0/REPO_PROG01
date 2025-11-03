@@ -74,7 +74,6 @@ public class Main {
               ((y >= 0 && y < screen.length - 5) && (x >= 0 && x < screen[0].length - 3)) {
 
               }
-            }
           }
     return false;
   }
@@ -87,5 +86,5 @@ public class Main {
   }
 
 
- //san.TESTSPI.Sensores.san.TESTSPI.Sensores.probando.Main
+ //san.TESTSPI.Sensores.probando.Main
 }

@@ -14,5 +14,12 @@ public class Utilidades {
     }
   }
 
+  public static void imprimirArray (int[] arrayX) {
 
+    for (int i = 0; i < arrayX.length; i++) {
+      System.out.printf("%5d", arrayX[i]);
+    }
+      System.out.println();
+
+  }
 }

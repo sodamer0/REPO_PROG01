@@ -1,4 +1,4 @@
-package san.TESTSPI.Sensores;
+package san.TESTSPI.Sensores2;
 
 import java.util.Scanner;
 

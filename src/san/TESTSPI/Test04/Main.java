@@ -1,5 +1,7 @@
 package san.TESTSPI.Test04;
 
+import ajces.matrices.Ejercicio11;
+
 import java.util.Scanner;
 
 public class Main {
@@ -9,7 +11,7 @@ public class Main {
   public static void main(String[] args) {
 
     /*
-    Crear las siguientes funciones en el ejercicios03Tests.san.TESTSPI.Sensores.san.TESTSPI.Sensores.probando.Main.
+    Crear las siguientes funciones en el Main.
     Recuerda que al estar dentro de la clase main, las funciones deben de ser estáticas.
     El departamento de RRHH de nuestra empresa nos ha pedido que le desarrollemos unas utilidades para simplificarles
     su trabajo.

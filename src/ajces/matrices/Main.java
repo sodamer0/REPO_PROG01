@@ -20,7 +20,7 @@ public class Main {
 
     //int[][] matrizRandomiana = Ejercicio05.rellArray6x10Random();
 
-    int[][] matrizRandomianaSinRep = Ejercicio06.rellArray6x10RandomNR();
+    //int[][] matrizRandomianaSinRep = Ejercicio06.rellArray6x10RandomNR();
 
     //int[][] matrizRandomSinRepB = Ejercicio06.rellArray6x10RandomNRB();
 
@@ -28,13 +28,27 @@ public class Main {
 
     //Ejercicio05.maxYminMatriz(matrizRandomiana);
 
-    Utilidades.imprimirMatriz(matrizRandomianaSinRep);
+    //Utilidades.imprimirMatriz(matrizRandomianaSinRep);
 
-    Ejercicio06.maxYminMatriz(matrizRandomianaSinRep);
+    //Ejercicio06.maxYminMatriz(matrizRandomianaSinRep);
 
     //Utilidades.imprimirMatriz(matrizRandomSinRepB);
 
     //Ejercicio06.maxYminMatriz(matrizRandomSinRepB);
+
+    //int[][] matrizEj11 = Ejercicio11.crearMatrizRandom();
+
+    //Utilidades.imprimirMatriz(matrizEj11);
+
+    //Utilidades.imprimirArray(Ejercicio11.diagonalMatriz(matrizEj11));
+
+    //Ejercicio11.diagonalMatriz(matrizEj11);
+
+    int [][] matrizEj12 = Ejercicio12.crearMatrizRandom();
+
+    Utilidades.imprimirMatriz(matrizEj12);
+
+    Ejercicio12.diagonalMatriz(matrizEj12);
 
 
 
@@ -47,7 +61,9 @@ public class Main {
 
 
 
-  //san.TESTSPI.Sensores.san.TESTSPI.Sensores.probando.Main
+
+
+  //Main
 }
 
 

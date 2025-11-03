@@ -1,4 +1,4 @@
-package san.TESTSPI.Sensores;
+package san.TESTSPI.Sensores2;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
