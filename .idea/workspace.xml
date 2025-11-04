@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="018dba07-847a-4eea-b27c-cce5968b3619" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/san/PROGI02/RepasoFinal/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/san/PROGI02/RepasoFinal/RepF01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/san/PROGI02/RepasoFinal/RepF02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/san/PROGI02/RepasoFinal/RepF03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +51,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.ajces.matrices.Main.executor": "Run",
+    "Application.san.PROGI02.RepasoFinal.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.MainTest (1).executor": "Run",
     "JUnit.MainTest.executor": "Run",
@@ -57,7 +62,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -70,7 +75,7 @@
       <recent name="C:\Users\SanVic\IdeaProjects\REPO_PROG01\src\san\TESTSPI\Sensor" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="san.TESTSPI.Shooter.Main" />
       <module name="REPO_PROG01" />
