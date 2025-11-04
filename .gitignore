@@ -37,7 +37,4 @@ bin/
 =======
 .DS_Store
 
-# Archivos y directorios de IntelliJ
-.idea/
-*.iml
->>>>>>> 9b99ee003115ed5b616f7140448e810b602307f5
+
