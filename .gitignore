@@ -42,6 +42,8 @@ bin/
 !.idea/modules.xml
 !.idea/vcs.xml
 !.idea/misc.xml
-*.iml
+
 !REPO_PROG01.iml
->>>>>>> 9b99ee003115ed5b616f7140448e810b602307f5
+
+
+>>>>>>> e3befb509747af9bf6441e1659a668aa2d00416b
