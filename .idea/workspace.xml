@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="018dba07-847a-4eea-b27c-cce5968b3619" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/san/PROGI02/RepasoFinal/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/san/PROGI02/RepasoFinal/RepF01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/san/PROGI02/RepasoFinal/RepF02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/san/PROGI02/RepasoFinal/RepF03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/san/PROGI01/Algoritmos/EjercicioProfesor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/san/PROGI01/Algoritmos/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/san/PROGI01/Repaso02/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/san/PROGI01/Repaso02/Sanidad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/san/PROGI01/Repaso03/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/san/PROGI01/Repaso03/Repaso03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/REPO_PROG01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/REPO_PROG01.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +55,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.ajces.matrices.Main.executor": "Run",
+    "Application.san.PROGI01.Algoritmos.Main.executor": "Run",
     "Application.san.PROGI02.RepasoFinal.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.MainTest (1).executor": "Run",
