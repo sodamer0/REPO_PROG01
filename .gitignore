@@ -3,11 +3,11 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-=======
-# IntelliJ IDEA
-/out/
 
->>>>>>> 9b99ee003115ed5b616f7140448e810b602307f5
+# IntelliJ IDEA
+out/
+
+
 
 ### Eclipse ###
 .apt_generated
@@ -32,10 +32,9 @@ bin/
 .vscode/
 
 ### Mac OS ###
-<<<<<<< HEAD
+
 .DS_Store
-=======
-.DS_Store
+
 
 # Archivos y directorios de IntelliJ
 .idea/
@@ -45,5 +44,7 @@ bin/
 
 !REPO_PROG01.iml
 
-
->>>>>>> e3befb509747af9bf6441e1659a668aa2d00416b
+.idea/workspace.xml
+.idea/tasks/
+.idea/shelf/
+.idea/runConfigurations/

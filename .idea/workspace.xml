@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="018dba07-847a-4eea-b27c-cce5968b3619" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/san/PROGI01/Algoritmos/EjercicioProfesor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/san/PROGI01/Algoritmos/EjercicioProfesor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +48,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.ajces.matrices.Main.executor": "Run",
+    "Application.san.JetEx.Main.executor": "Run",
     "Application.san.PROGI01.Algoritmos.Main.executor": "Run",
     "Application.san.PROGI02.RepasoFinal.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
