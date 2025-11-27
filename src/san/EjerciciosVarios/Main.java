@@ -1,5 +1,7 @@
 package san.EjerciciosVarios;
 
+import san.JetEx.maxNumSinAlm;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -13,7 +15,7 @@ public class Main {
 
 
 
-    maxNumSinAlm.darMaxNumSinAlm();
+    maxNumSinAlm.maxSecuenciaSinAlm();
 
 
 

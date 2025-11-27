@@ -1,16 +1,11 @@
-package san.EjerciciosVarios;
+package san.JetEx;
 import java.util.Scanner;
 public class maxNumSinAlm {
 
   private static Scanner teclado = new Scanner(System.in);
 
-    public static void main(String[] args) {
 
-      darMaxNumSinAlm();
-
-    }
-
-      public static void darMaxNumSinAlm () {
+    public static void maxSecuencSinAlm (){
         // Lee el primer número
         int number = teclado.nextInt();
         // El primer número (si no es 0) será el máximo inicial
@@ -26,7 +21,6 @@ public class maxNumSinAlm {
         }
         // Imprime el máximo encontrado
         System.out.println(max);
-
         teclado.close();
       }
 
